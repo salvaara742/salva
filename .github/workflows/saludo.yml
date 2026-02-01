@@ -1,0 +1,11 @@
+name: Primer Workflow
+on: [push]
+
+jobs:
+  saludo-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir saludo
+        run: echo "¡Hola! Estoy ejecutando esto automáticamente."
+      - name: Listar archivos
+        run: ls -la
